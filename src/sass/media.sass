@@ -1,0 +1,96 @@
+@media (max-width: 991px)
+	.container
+		padding: 0 10px
+	.block-js
+		padding: 0 20px
+	.title,
+	.experience-options
+		margin-left: 0
+	.block-experience
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		padding: 0 40px
+		.title
+			flex-basis: 100%
+
+@media (max-width: 767px)
+	.menu-btn
+		display: block
+		width: 30px
+		height: 30px
+		background: transparent
+		border: none
+		outline: none
+		&.open
+			span:first-child
+				transform: rotate(45deg)
+				top: 9.5px
+			span:nth-child(2)
+				width: 0
+			span:nth-child(3)
+				transform: rotate(-45deg)
+				top: -9.5px
+		span
+			display: block
+			width: 100%
+			top: 0
+			height: 4px
+			padding: 0 !important
+			margin-bottom: 6px
+			border-radius: 2px
+			position: relative
+			background: #fff
+			transition: all .3s ease
+			&:last-child
+				margin-bottom: 0
+	.top-panel 
+		.container
+			position: relative
+			padding-left: 10px
+			background: #000
+			height: 50px
+			.top-panel-menu
+				display: none
+				flex-wrap: wrap
+				width: 100%
+				padding: 5px 0
+				position: absolute
+				z-index: 1
+				top: 100%
+				left: 0
+				text-align: left
+				background-color: #000
+				border-top: 1px solid #312f2f
+				span
+					display: block
+					margin: 0 !important
+					padding: 8px 13px
+					font-size: 16px
+					color: #fff !important
+	.block-experience
+		padding: 0
+		.experience-options
+			column-count: 2
+			margin-right: -70px
+	.slider 
+		margin-top: 35px
+		.slider-option
+			display: none
+
+@media (max-width: 480px)
+	h1
+		font-size: 64px
+	.title
+		font-size: 25.98px
+	.block-js
+		margin-top: 60px
+	.block-experience
+		.title
+			margin-bottom: 35px
+		.experience-options
+			margin-right: 0
+			column-count: 1
+	.block-aboutme 
+		button
+			margin-top: 35px

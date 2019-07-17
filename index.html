@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="dist/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="dist/css/jquery-ui.css">
+	<link rel="stylesheet" href="dist/css/styles.css">
+	<link rel="stylesheet" href="dist/css/media.css">
+</head>
+<body>
+	<!-- TOP PANEL -->
+	<header class="top-panel">
+		<div class="container">
+			<button class="menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="top-panel-menu">
+				<span class="active" data-target="#information">Личная информация</span>
+				<span data-target="#experience">Опыт</span>
+				<span data-target="#js">JavaScript</span>
+				<span data-target="#about-me">О себе</span>
+			</div>
+		</div>
+	</header>
+	<!-- end TOP PANEL -->
+	<div class="profile">
+		<div class="container">
+			<h1>Анкета</h1>
+			<!-- Personal information -->
+			<div class="block-information" id="information">
+				<div class="icon"></div>
+				<div class="title">Личная информация</div>
+
+				<div class="field">
+					<input type="text" name="full_name" value="Фесовец Артём Вадимович">
+					<label>ФИО</label>
+				</div>
+				
+				<!-- SELECT-->
+				<div class="field">
+					<div id="year-birth" class="year-birth">
+						<div>
+							<span id="year-birth-value" class="year-birth-value active">1996</span> <!-- Значение для селекта -->
+							<label>Год рождения</label>
+							<i class="arrow"></i>
+						</div>
+						<div class="options">
+							<div class="options-inner">
+								<div class="option-item" data-value="">Не указывать</div>
+								<div class="option-item" data-value="1998">1998</div>
+								<div class="option-item" data-value="1997">1997</div>
+								<div class="option-item" data-value="1996">1996</div>
+								<div class="option-item" data-value="1995">1995</div>
+								<div class="option-item" data-value="1994">1994</div>
+								<div class="option-item" data-value="1993">1993</div>
+								<div class="option-item" data-value="1992">1992</div>
+								<div class="option-item" data-value="1991">1991</div>
+								<div class="option-item" data-value="1990">1990</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end SELECT -->
+
+				<div class="field">
+					<input type="text" name="place_residence" value="Украина, г. Днепр">
+					<label>Место проживания</label>
+				</div>
+
+				<div class="field">
+					<input type="text" name="skype" value="x_goodzon_x">
+					<label>Skype</label>
+				</div>
+
+				<div class="field">
+					<input type="text" name="email" value="goodzonovka@gmail.com">
+					<label>E-mail</label>
+				</div>
+			</div>
+			<!-- end Personal information -->
+			
+			<!-- About your experience -->
+			<div class="block-experience" id="experience">
+				<div class="icon"></div>
+				<div class="title">Расскажите о своем опыте</div>
+				<ul class="experience-options">
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>БЭМ/OOCSS</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>Stylus/LESS/SASS</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>Работаю с SVG</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>Верстаю семантично</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>ES2015/ES2016</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>Gulp/GRUNT</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox">
+							<span>Webpack</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>jQuery</span>
+						</label>
+					</li>
+					<li>
+						<label class="active">
+							<input type="checkbox">
+							<span>Ипользую Git</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<!-- end About your experience -->
+			
+			<!-- JavaScript Level -->
+			<div class="block-js" id="js">
+				<div class="icon"></div>
+				<div class="title">Уровень владения JavaScript</div>
+				<div id="slider" class="slider">
+					<span class="cutting"></span>
+					<span class="slider-option slider-option-n1">Не владею</span>
+					<span class="slider-option slider-option-n2">Использую готовые<br> решения</span>
+					<span class="slider-option slider-option-n3">Использую готовые решения<br> и умею и переделывать</span>
+					<span class="slider-option slider-option-n4">Пишу сложный JS с нуля</span>
+				</div>
+			</div>
+			<!-- end JavaScript Level -->
+			
+			<!-- About yourself -->
+			<div class="block-aboutme" id="about-me">
+				<div class="icon"></div>
+				<div class="title">Расскажите о себе</div>
+				<div class="text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+				<textarea name="about-me" placeholder="Понравилась тем, что...">Удаленная работа, ожидаю интересные проекты, которые не заставят деградировать:), + компания давно на рынке - вызывает доверие:), и, конечно же, не плохую з/п обещают
+				</textarea>
+				<button>Готово</button>
+			</div>
+			<!-- end About yourself -->
+		</div>
+	</div>
+	<script src="dist/js/jquery-3.4.1.min.js"></script>
+	<script src="dist/js/jquery-ui.min.js"></script>
+	<script src="dist/js/ui.touch-punch.min.js"></script>
+	<script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="dist/js/main.js"></script>
+</body>
+</html>
